@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <!-- Bootstrap 5 -->
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">-->
+
+    <title>Prometheus Web</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!--<h1>Wolcome to IonKid</h1>-->
+<div class="frame">
+    <div class="center">
+        <div class="title">
+            <h1>Drop file to upload</h1>
+        </div>
+
+        <div class="dropzone">
+            <img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" />
+            <input type="file" class="upload-input" />
+        </div>
+
+        <button type="button" class="btn" name="uploadbutton">Upload file</button>
+
+    </div>
+</div>
+<div class="test1">
+
+    <tr>
+        <td valign=”top”>
+            <label for=”upload”>File</label>
+        </td>
+        <td valign=”top”>
+<!--            <input accept=”.zip” type=”file” id=”uploadZip” name=”icon”>-->
+            <input type=”file” id=”upload” name=”send_file”>
+        </td>
+    </tr>
+    <tr>
+        <td colspan=”5" style=”text-align:center”>
+            <button type=”submit”>Upload</button>
+        </td>
+    </tr>
+</div>
+<div id="send_file" class="test2">
+    <h3>Send File fo FireBase</h3>
+    <h4>To load new file plz refresh page</h4>
+    <progress value="0" max="100" id="uploader">0%</progress>
+    <input type="file" value="upload" id="fileButton">
+    <h5 id="text_load_complete"></h5>
+</div>
+<!-- ************ Load Firebase ************ -->
+<!--<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>-->
+<!--<script>console.log("gstatic/firebasejs/8.1.1: OK")</script>-->
+
+<script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>
+<script>console.log("gstatic/firebasejs/3.5.2: OK")</script>
+
+<script src="js/index.js"></script>
+
+</body>
+</html>
